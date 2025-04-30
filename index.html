@@ -4,16 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Head or Tail</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="card">
+      <p class="para">
+        <a href="#" id="howToPlayLink">How to Play?</a>
+      </p>
       <div class="title">Head or Tail</div>
       <div class="coin" id="coin">?</div>
       <div class="buttons">
         <button id="head">Head</button>
+        <button id="toss">Toss</button>
         <button id="tail">Tail</button>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <!-- Dialog Box (Modal) -->
+    <div id="howToPlayModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>How to Play</h3>
+        <ul>
+          <li>
+            Step 1: Choose <strong>Head</strong> or <strong>Tail</strong>.
+          </li>
+          <li>Step 2: Click the <strong>Toss</strong> button.</li>
+          <li>Step 3: The coin will flip and reveal a result.</li>
+          <li>🎯 If your guess is correct — you win!</li>
+        </ul>
       </div>
     </div>
     <script src="script.js"></script>
